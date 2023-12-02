@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".RandomGeneratorActivity">
+
+    <EditText
+        android:id="@+id/adetEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adet"
+        android:inputType="number"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/minEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Min Değer"
+        android:inputType="number"
+        android:layout_below="@id/adetEditText"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/maxEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Max Değer"
+        android:inputType="number"
+        android:layout_below="@id/minEditText"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/generateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate"
+        android:layout_below="@id/maxEditText"
+        android:layout_marginBottom="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/generateButton">
+
+        <LinearLayout
+            android:id="@+id/progressBarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </ScrollView>
+</RelativeLayout>

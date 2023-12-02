@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_No"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="202013709027"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <TextView
+        android:id="@+id/txt_Isim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="184dp"
+        android:text="Göktuğ Bubilik"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_No" />
+
+    <Button
+        android:id="@+id/btn_convertor"
+        android:layout_width="115dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="44dp"
+        android:text="Convertor"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_random"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_random"
+        android:layout_width="117dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="164dp"
+        android:text="Random"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_No" />
+
+    <Button
+        android:id="@+id/btn_sms"
+        android:layout_width="116dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="164dp"
+        android:text="SMS"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_random" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

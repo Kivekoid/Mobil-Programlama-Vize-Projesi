@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConvertorActivity">
+
+    <EditText
+        android:id="@+id/editTextNumber_Megabyte"
+        android:layout_width="223dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="75dp"
+        android:ems="10"
+        android:hint="Megabyte değerini girin"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/txt_megabyte"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_Number" />
+
+    <TextView
+        android:id="@+id/txt_result2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:text="Sonuç"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_Number2" />
+
+    <Button
+        android:id="@+id/btn_convert2"
+        android:layout_width="110dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="32dp"
+        android:text="Dönüştür"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber_Megabyte" />
+
+    <Spinner
+        android:id="@+id/spinner_Number2"
+        android:layout_width="209dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber_Megabyte" />
+
+    <TextView
+        android:id="@+id/txt_megabyte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="8dp"
+        android:text="Megabyte"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumber_Decimal"
+        app:layout_constraintTop_toBottomOf="@+id/txt_result" />
+
+    <TextView
+        android:id="@+id/txt_Convertor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="661dp"
+        android:text="Dönüştürücü"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531" />
+
+    <TextView
+        android:id="@+id/txt_decimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="12dp"
+        android:text="Onluk"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumber_Decimal"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Convertor" />
+
+    <EditText
+        android:id="@+id/editTextNumber_Decimal"
+        android:layout_width="223dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="46dp"
+        android:ems="10"
+        android:hint="Onluk sayı girin"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/btn_convert1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Convertor" />
+
+    <Spinner
+        android:id="@+id/spinner_Number"
+        android:layout_width="209dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber_Decimal" />
+
+    <Button
+        android:id="@+id/btn_convert1"
+        android:layout_width="110dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:text="Dönüştür"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber_Decimal" />
+
+    <TextView
+        android:id="@+id/txt_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:text="Sonuç"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_Number" />
+
+    <TextView
+        android:id="@+id/txt_celsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="41dp"
+        android:text="Celsius"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_result2" />
+
+    <EditText
+        android:id="@+id/editTextNumber_celsius"
+        android:layout_width="223dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="53dp"
+        android:ems="10"
+        android:hint="Sıcaklık değeri girin"
+        android:inputType="numberSigned"
+        app:layout_constraintStart_toEndOf="@+id/txt_celsius"
+        app:layout_constraintTop_toBottomOf="@+id/btn_convert2" />
+
+    <Spinner
+        android:id="@+id/spinner_celsius"
+        android:layout_width="209dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber_celsius" />
+
+    <Button
+        android:id="@+id/btn_convert3"
+        android:layout_width="110dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="Dönüştür"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/spinner_celsius"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber_celsius" />
+
+    <TextView
+        android:id="@+id/txt_result3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="12dp"
+        android:text="Sonuç"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_celsius" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
